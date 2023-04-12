@@ -1,0 +1,138 @@
+
+* 
+ul.my-list-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  overflow:auto;
+  overflow-wrap:normal;
+
+  background-color: #222222;
+  
+}
+
+li.my-list-style {
+  float:left;
+  padding-inline-end: 7%;
+  padding-inline-start: 7%;
+  color:white
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 500px
+}
+
+
+/*footer*/
+ul.my-list-style_2 {
+  list-style-type: none;
+  overflow:hidden;
+  background-color: #333333;
+  
+  
+
+ 
+}
+
+li.my-list-style_2 {
+  float:left;
+  
+}
+
+/*footer*/
+
+
+
+
+
+
+
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  width:100%
+}
+
+li a:hover {
+  background-color: #333333;
+}
+
+
+body {
+  background-color:#333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #333333;
+  padding-top: 100px;
+  padding: 00px;
+  text-align: center;
+  font-size: 37px;
+  font-family:sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+aside {
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 2;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333333;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
